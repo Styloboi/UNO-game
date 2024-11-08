@@ -8,8 +8,8 @@ import random
 
 
 # Here's a huge list of ASCII cards
-# You have to scroll down to line 181 see the important code
-cardOne = """
+# You have to scroll down to line 613 see the important code
+cardOneGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░░░/┐░░░║
 ║░░/││░░░║
@@ -21,7 +21,7 @@ cardOne = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardTwo = """
+cardTwoGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -33,7 +33,7 @@ cardTwo = """
 ║░└────┘░║
 ╚════════╝
 """
-cardThree = """
+cardThreeGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░░/──\░░║
 ║░/┌──┐\░║
@@ -45,7 +45,7 @@ cardThree = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardFour = """
+cardFourGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░░░/┐░░░║
 ║░░/││░░░║
@@ -57,7 +57,7 @@ cardFour = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardFive = """
+cardFiveGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░┌────┐░║
 ║░│┌───┘░║
@@ -69,7 +69,7 @@ cardFive = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardSix = """
+cardSixGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -81,7 +81,7 @@ cardSix = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardSeven = """
+cardSevenGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░┌────┐░║
 ║░└─── /░║
@@ -93,7 +93,7 @@ cardSeven = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardEight = """
+cardEightGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -105,7 +105,7 @@ cardEight = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardNine = """
+cardNineGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -117,7 +117,7 @@ cardNine = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardZero = """
+cardZeroGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -129,7 +129,7 @@ cardZero = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardPlusTwo = """
+cardPlusTwoGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░║░░░░░░║
 ║═╬═░░░░░║
@@ -141,7 +141,7 @@ cardPlusTwo = """
 ║░░░───┘░║
 ╚════════╝
 """
-cardSkip ="""
+cardSkipGreen = Style.BRIGHT + Fore.GREEN + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ─┐ \░║
@@ -153,7 +153,7 @@ cardSkip ="""
 ║░░\──/░░║
 ╚════════╝
 """
-cardOne = """
+cardOneRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░░░/┐░░░║
 ║░░/││░░░║
@@ -165,7 +165,7 @@ cardOne = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardTwo = """
+cardTwoRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -177,7 +177,7 @@ cardTwo = """
 ║░└────┘░║
 ╚════════╝
 """
-cardThree = """
+cardThreeRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░░/──\░░║
 ║░/┌──┐\░║
@@ -189,7 +189,7 @@ cardThree = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardFour = """
+cardFourRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░░░/┐░░░║
 ║░░/││░░░║
@@ -201,7 +201,7 @@ cardFour = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardFive = """
+cardFiveRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░┌────┐░║
 ║░│┌───┘░║
@@ -213,7 +213,7 @@ cardFive = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardSix = """
+cardSixRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -225,7 +225,7 @@ cardSix = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardSeven = """
+cardSevenRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░┌────┐░║
 ║░└─── /░║
@@ -237,7 +237,7 @@ cardSeven = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardEight = """
+cardEightRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -249,7 +249,7 @@ cardEight = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardNine = """
+cardNineRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -261,7 +261,7 @@ cardNine = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardZero = """
+cardZeroRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -273,7 +273,7 @@ cardZero = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardPlusTwo = """
+cardPlusTwoRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░║░░░░░░║
 ║═╬═░░░░░║
@@ -285,7 +285,7 @@ cardPlusTwo = """
 ║░░░───┘░║
 ╚════════╝
 """
-cardSkip ="""
+cardSkipRed = Style.BRIGHT + Fore.RED + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ─┐ \░║
@@ -297,7 +297,7 @@ cardSkip ="""
 ║░░\──/░░║
 ╚════════╝
 """
-cardOne = """
+cardOneBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░░░/┐░░░║
 ║░░/││░░░║
@@ -309,7 +309,7 @@ cardOne = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardTwo = """
+cardTwoBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -321,7 +321,7 @@ cardTwo = """
 ║░└────┘░║
 ╚════════╝
 """
-cardThree = """
+cardThreeBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░░/──\░░║
 ║░/┌──┐\░║
@@ -333,7 +333,7 @@ cardThree = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardFour = """
+cardFourBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░░░/┐░░░║
 ║░░/││░░░║
@@ -345,7 +345,7 @@ cardFour = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardFive = """
+cardFiveBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░┌────┐░║
 ║░│┌───┘░║
@@ -357,7 +357,7 @@ cardFive = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardSix = """
+cardSixBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -369,7 +369,7 @@ cardSix = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardSeven = """
+cardSevenBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░┌────┐░║
 ║░└─── /░║
@@ -381,7 +381,7 @@ cardSeven = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardEight = """
+cardEightBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -393,7 +393,7 @@ cardEight = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardNine = """
+cardNineBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -405,7 +405,7 @@ cardNine = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardZero = """
+cardZeroBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -417,7 +417,7 @@ cardZero = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardPlusTwo = """
+cardPlusTwoBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░║░░░░░░║
 ║═╬═░░░░░║
@@ -429,7 +429,7 @@ cardPlusTwo = """
 ║░░░───┘░║
 ╚════════╝
 """
-cardSkip ="""
+cardSkipBlue = Style.BRIGHT + Fore.BLUE + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ─┐ \░║
@@ -441,7 +441,7 @@ cardSkip ="""
 ║░░\──/░░║
 ╚════════╝
 """
-cardOne = """
+cardOneYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░░░/┐░░░║
 ║░░/││░░░║
@@ -453,7 +453,7 @@ cardOne = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardTwo = """
+cardTwoYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -465,7 +465,7 @@ cardTwo = """
 ║░└────┘░║
 ╚════════╝
 """
-cardThree = """
+cardThreeYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░░/──\░░║
 ║░/┌──┐\░║
@@ -477,7 +477,7 @@ cardThree = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardFour = """
+cardFourYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░░░/┐░░░║
 ║░░/││░░░║
@@ -489,7 +489,7 @@ cardFour = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardFive = """
+cardFiveYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░┌────┐░║
 ║░│┌───┘░║
@@ -501,7 +501,7 @@ cardFive = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardSix = """
+cardSixYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -513,7 +513,7 @@ cardSix = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardSeven = """
+cardSevenYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░┌────┐░║
 ║░└─── /░║
@@ -525,7 +525,7 @@ cardSeven = """
 ║░░░└┘░░░║
 ╚════════╝
 """
-cardEight = """
+cardEightYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -537,7 +537,7 @@ cardEight = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardNine = """
+cardNineYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -549,7 +549,7 @@ cardNine = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardZero = """
+cardZeroYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ── \░║
@@ -561,7 +561,7 @@ cardZero = """
 ║░░\──/░░║
 ╚════════╝
 """
-cardPlusTwo = """
+cardPlusTwoYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░║░░░░░░║
 ║═╬═░░░░░║
@@ -573,7 +573,7 @@ cardPlusTwo = """
 ║░░░───┘░║
 ╚════════╝
 """
-cardSkip ="""
+cardSkipYellow = Style.BRIGHT + Fore.YELLOW + """
 ╔════════╗
 ║░░/──\░░║
 ║░/ ─┐ \░║
@@ -585,7 +585,7 @@ cardSkip ="""
 ║░░\──/░░║
 ╚════════╝
 """
-cardWild = """
+cardWild = Style.BRIGHT + Fore.WHITE + """
 ╔════════╗
 ║░┌┐░░┌┐░║
 ║░││░░││░║
@@ -597,7 +597,7 @@ cardWild = """
 ║░░\/\/░░║
 ╚════════╝
 """
-cardWildPlusFour = """
+cardWildPlusFour = Style.BRIGHT + Fore.WHITE + """
 ╔════════╗
 ║░║░░░║║░║
 ║═╬═░░╚╬═║
@@ -610,42 +610,50 @@ cardWildPlusFour = """
 ╚════════╝
 """
 
-
-cardDeckDraw = """
-
-"""
-
 gameruleStack = False
 userDeck = []
 botDeck = []
-cardSelector = 0
 gameDeck = []
 
-wildCards = [cardWild, cardWild, cardWild, cardWild, cardWildPlusFour, cardWildPlusFour, cardWildPlusFour, cardWildPlusFour,]
-redCards = [cardOne, cardOne, cardTwo, cardTwo, cardThree, cardThree, cardFour, cardFour, cardFive, cardFive, cardSix, cardSix, cardSeven, cardSeven, cardEight, cardEight, cardNine, cardNine, cardZero, cardZero, cardSkip, cardSkip, cardPlusTwo, cardPlusTwo]
-greenCards = [cardOne, cardOne, cardTwo, cardTwo, cardThree, cardThree, cardFour, cardFour, cardFive, cardFive, cardSix, cardSix, cardSeven, cardSeven, cardEight, cardEight, cardNine, cardNine, cardZero, cardZero, cardSkip, cardSkip, cardPlusTwo, cardPlusTwo]
-blueCards = [cardOne, cardOne, cardTwo, cardTwo, cardThree, cardThree, cardFour, cardFour, cardFive, cardFive, cardSix, cardSix, cardSeven, cardSeven, cardEight, cardEight, cardNine, cardNine, cardZero, cardZero, cardSkip, cardSkip, cardPlusTwo, cardPlusTwo]
-yellowCards = [cardOne, cardOne, cardTwo, cardTwo, cardThree, cardThree, cardFour, cardFour, cardFive, cardFive, cardSix, cardSix, cardSeven, cardSeven, cardEight, cardEight, cardNine, cardNine, cardZero, cardZero, cardSkip, cardSkip, cardPlusTwo, cardPlusTwo]
+gameDeck = [cardOneGreen, cardTwoGreen, cardThreeGreen, cardFourGreen, cardFiveGreen, cardSixGreen, cardSevenGreen, cardEightGreen, cardNineGreen, cardZeroGreen, cardPlusTwoGreen, cardSkipGreen, cardOneGreen, cardTwoGreen, cardThreeGreen, cardFourGreen, cardFiveGreen, cardSixGreen, cardSevenGreen, cardEightGreen, cardNineGreen, cardZeroGreen, cardPlusTwoGreen, cardSkipGreen, cardOneRed, cardTwoRed, cardThreeRed, cardFourRed, cardFiveRed, cardSixRed, cardSevenRed, cardEightRed, cardNineRed, cardZeroRed, cardPlusTwoRed, cardSkipRed, cardOneRed, cardTwoRed, cardThreeRed, cardFourRed, cardFiveRed, cardSixRed, cardSevenRed, cardEightRed, cardNineRed, cardZeroRed, cardPlusTwoRed, cardSkipRed, cardOneBlue, cardTwoBlue, cardThreeBlue, cardFourBlue, cardFiveBlue, cardSixBlue, cardSevenBlue, cardEightBlue, cardNineBlue, cardZeroBlue, cardPlusTwoBlue, cardSkipBlue, cardOneBlue, cardTwoBlue, cardThreeBlue, cardFourBlue, cardFiveBlue, cardSixBlue, cardSevenBlue, cardEightBlue, cardNineBlue, cardZeroBlue, cardPlusTwoBlue, cardSkipBlue, cardOneYellow, cardTwoYellow, cardThreeYellow, cardFourYellow, cardFiveYellow, cardSixYellow, cardSevenYellow, cardEightYellow, cardNineYellow, cardZeroYellow, cardPlusTwoYellow, cardSkipYellow, cardOneYellow, cardTwoYellow, cardThreeYellow, cardFourYellow, cardFiveYellow, cardSixYellow, cardSevenYellow, cardEightYellow, cardNineYellow, cardZeroYellow, cardPlusTwoYellow, cardSkipYellow, cardWild, cardWild, cardWild, cardWild, cardWildPlusFour, cardWildPlusFour, cardWildPlusFour, cardWildPlusFour]
 
-gameDeck = redCards + greenCards + blueCards + yellowCards + wildCards
+#Shuffles gameDeck
 random.shuffle(gameDeck)
 
-def on_press(key):
-    global cardSelector
-    if key == keyboard.Key.up:
-        if cardSelector < 6:
-            cardSelector += 1
-        print('beep', cardSelector)
-    if key == keyboard.Key.down:
-        if cardSelector > 0:
-            cardSelector -= 1
-        print("boop", cardSelector)
-    if key == keyboard.Key.esc:
-        listener.stop()
-    
-    
-with keyboard.Listener(on_press=on_press) as listener:
-        listener.join()
+# def addUserCards():
+#    e
 
-for i in gameDeck:
-    print(i)
+# #Card Input
+# cardSelector = 0
+# def on_press(key):
+    
+#     global cardSelector
+#     if key == keyboard.Key.up:
+#         if cardSelector < 6:
+#             cardSelector += 1
+#         print('beep', cardSelector)
+#     if key == keyboard.Key.down:
+#         if cardSelector > 0:
+#             cardSelector -= 1
+#         print("boop", cardSelector)
+#     if key == keyboard.Key.enter:
+#         os.system('cls')    
+#     if key == keyboard.Key.esc:
+#         listener.stop()
+    
+# with keyboard.Listener(on_press=on_press) as listener:
+#         listener.join()
+
+
+# #This is if you want to print the entire deck, uncomment it if you want to test it
+# for n in gameDeck:
+#     print(n)
+
+#This is my attempt at making the loop to add seven gameDeck values to userDeck
+loop = 0
+while loop <= 6:
+    userDeck += gameDeck[loop]
+    loop += 1
+
+# for i in userDeck:
+#     print(i)
